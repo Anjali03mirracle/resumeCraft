@@ -18,7 +18,7 @@ const page = () => {
             Build Your Resume 
           </h1>
           <p className="mb-8 text-lg font-normal text-gray-700 lg:text-xl sm:px-16 xl:px-48">
-            Effortlessly Craft a Professional Resume with Our AI-Powered Builder
+            Effortlessly Craft a Professional Resume with Our Resume Builder
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
             <Link
