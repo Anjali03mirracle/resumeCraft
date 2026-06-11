@@ -17,9 +17,9 @@ export async function generateMetadata({
 
   if (resume?.firstName === undefined && resume?.lastName === undefined) {
     return {
-      title: "ResumeCraft - Professional AI Resume Builder",
+      title: "ResumeCraft - Professional Resume Builder",
       description:
-        "Generate a polished, professional resume in just a few clicks with our AI-powered resume builder.",
+        "Generate a polished, professional resume in just a few clicks with our resume builder.",
     };
   }
 

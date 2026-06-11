@@ -65,8 +65,7 @@ const page = () => {
 
             <p className="mt-1 text-sm text-gray-600">
               Enter your personal details, work experience, education, and
-              skills into the provided form. Our AI assists you in filling out
-              each section accurately and effectively.
+              skills into the provided form.
             </p>
           </div>
 
