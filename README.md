@@ -1,98 +1,146 @@
+
 # ResumeCraft
 
-**ResumeCraft** is a resume builder designed to help users create professional, customized resumes with ease. ResumeCraft ensures that each resume is tailored to highlight the user’s skills, experience, and achievements effectively.
+ResumeCraft is a web-based resume builder that helps users create professional and customized resumes with ease. It provides an intuitive interface to build, edit, and manage resumes while presenting professional information in a structured format.
 
+## Features
 
-## <a name="features">✨ Features </a>
+- **User Authentication:** Secure user authentication and account management using Clerk.
+- **Resume Creation:** Create professional resumes with structured sections.
+- **Resume Customization:** Add and edit personal details, education, work experience, skills, and other relevant information.
+- **Real-Time Preview:** Preview resume changes while editing.
+- **AI Integration:** Integration with Google's Generative AI SDK.
+- **Resume Management:** Manage and customize resume content.
+- **Responsive Design:** Access the application across different screen sizes.
 
-- **Professional Resume Generation:** Generate a clean, polished resume effortlessly.
+## Tech Stack
 
-- **User Authentication:** Secure login and registration with Clerk.
+| Category | Technology |
+|---|---|
+| Frontend | Next.js 14, React 18 |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Authentication | Clerk |
+| Database | MongoDB |
+| ODM | Mongoose |
+| AI Integration | Google Generative AI |
+| Form Management | React Hook Form |
+| Validation | Zod |
+| UI Components | Radix UI |
 
-- **Real-Time Preview:** See live updates as you fill out the resume form.
+## Live Demo
 
-- **Easy Customization:** Edit sections like experience, education, skills, and more.
-
-- **Save and Share:** Save your resume and share a link with potential employers.
-
-- **Responsiveness:** Ensures the application adapts seamlessly to various screen sizes and devices.
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- **Frontend:** Next.js 14.2.5
-
-- **Authentication:** Clerk
-
-
-- **Styling:** TailwindCSS
-
-- **Backend:** Node.js
-
-- **Database:** MongoDB
+[ResumeCraft](https://resume-craft-ebon.vercel.app/)
 
 ## Getting Started
 
+Follow these steps to run ResumeCraft locally.
+
 ### Prerequisites
 
-- **Node.js** (v22.0 or later) and **npm** (v6 or later) installed on your computer.
+Make sure you have the following installed:
 
-### Installation
+- Node.js
+- npm
+- Git
+- MongoDB database
+- Required API credentials
 
-1. **Clone the Repository**
+### 1. Clone the Repository
 
-   ```bash
-   git clone https://github.com/exclusiveabhi/ai-resume-builder.git
-   ```
+```bash
+git clone https://github.com/Anjali03mirracle/resumeCraft.git
+```
 
-2. **Navigate to the Project Directory**
+### 2. Navigate to the Project Directory
 
-   ```bash
-   cd ai-resume-builder
-   ```
+```bash
+cd resumeCraft
+```
 
-2. **Install Dependencies**
+### 3. Install Dependencies
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
-3. **Start the application**
+### 4. Configure Environment Variables
 
-   ```bash
-   npm run dev
-   ```
+Create a `.env.local` file in the root directory.
 
-   The app will be running on `http://localhost:3000`.
+Add the environment variables required by the application:
 
+```env
+MONGODB_URI=your_mongodb_connection_string
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+GOOGLE_API_KEY=your_google_api_key
+```
 
-3. **Configure Environment Variables**
+Note: Verify the exact environment variable names used in the source code before configuring them. Additional Clerk configuration may also be required.
 
-   Create a `.env.local` file in the `root` directory and set the required environment variables. Refer to `.env.local.example` for the required necessary details.
+Never commit your actual API keys or database credentials to GitHub.
+
+### 5. Start the Development Server
+
+```bash
+npm run dev
+```
+
+Open the following URL in your browser:
+
+http://localhost:3000
+
+## Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Starts the development server |
+| `npm run build` | Creates a production build |
+| `npm run start` | Starts the production server |
+| `npm run lint` | Runs the configured lint script |
+
+## Project Structure
+
+```text
+resumeCraft/
+├── app/              # Application routes and pages
+├── components/       # Reusable UI components
+├── lib/              # Utility functions and shared logic
+├── public/            # Static assets
+├── middleware.ts      # Application middleware
+├── package.json       # Dependencies and scripts
+├── next.config.mjs    # Next.js configuration
+└── README.md          # Project documentation
+```
 
 ## Contributing
 
-If you would like to contribute to **ResumeCraft**, please follow these steps:
+Contributions are welcome.
 
-1. **Fork the Repository**
-2. **Create a New Branch**
-
-   ```bash
-   git checkout -b feature/YourFeatureName
-   ```
-
-3. **Make Your Changes**
-4. **Commit Your Changes**
+1. Fork the repository.
+2. Create a new branch:
 
    ```bash
-   git commit -am 'Add new feature'
+   git checkout -b feature/your-feature-name
    ```
 
-5. **Push to the Branch**
+3. Make your changes.
+4. Commit your changes:
 
    ```bash
-   git push origin feature/YourFeatureName
+   git add .
+   git commit -m "Add: your feature description"
    ```
 
-6. **Create a Pull Request**
+5. Push your branch:
 
+   ```bash
+   git push origin feature/your-feature-name
+   ```
 
+6. Open a Pull Request.
+
+## License
+
+This project is available for educational and development purposes. Add an appropriate license before distributing or reusing the project.
